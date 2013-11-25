@@ -97,7 +97,7 @@ function renderCart(cart, container) {
     var grandtotal = 0;
     tax = (total * 0.095).toFixed(2);
     grandtotal = (total * 1.095).toFixed(2);
-    template.find('.tax').html("$" + tax);
+    $('.cart-container').find($'.tax').html("$1" + tax);
     template.find('.subtotal').html("$" + total);
     template.find('.grandtotal').html("$" + grandtotal);
 } //renderCart()
