@@ -74,20 +74,21 @@ function renderCart(cart, container) {
     var idx, item;
     var total = 0;
     var template = $('.cart-item-template');
-    var clonedTemplate;
+    var costs = $('.cart-footer');
+    var instance;
     
     //empty the container of whatever is there currently
     container.empty();
 
     //for each item in the cart...
     for (idx = 0; idx < cart.items.length; ++idx) {
-        clonedTemplate = template.clone();
+        instance = template.clone();
         //TODO: code to render the cart item
-        clonedTemplate.find('.title').html(item.name);
-        clonedTemplate.find('.price').html(item.price);
+        instance.find('.title').html(item.name);
+        instance.find('.price').html(item.price);
         subtotal += cart.item[idx].price;
-        clonedTemplate.removeClass('cart-item-template');
-        container.append(clonedTemplate);
+        instance.removeClass('cart-item-template');
+        container.append(instance);
     } //for each cart item
 
     //TODO: code to render sub-total price of the cart
@@ -97,9 +98,9 @@ function renderCart(cart, container) {
     var grandtotal = 0;
     tax = (total * 0.095).toFixed(2);
     grandtotal = (total * 1.095).toFixed(2);
-    $('.cart-container').find($'.tax').html("$1" + tax);
-    template.find('.subtotal').html("$" + total);
-    template.find('.grandtotal').html("$" + grandtotal);
+    costs.find('.tax').html("$" + tax);
+    costs.find('.subtotal').html("$" + total);
+    costs.find('.grandtotal').html("$" + grandtotal);
 } //renderCart()
 
 // postCart()
