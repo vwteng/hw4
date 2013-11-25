@@ -1,0 +1,127 @@
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+@import url(http://fonts.googleapis.com/css?family=Rokkitt);
+
+body {
+	font-family: 'Rokkitt', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	background-color: #9A73D8;
+}
+
+header {
+	padding-top: 10px;
+	background-color: #FFF;
+}
+
+img {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.logo {
+	width: 40%;
+}
+
+p {
+	margin: 1em;
+}
+
+nav ul {
+	margin: 0 auto;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	display: inline-block;
+	padding: 10px;
+	color: #9A73D8;
+	text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {	
+	color: #9A73D8;
+	background-color: #000;
+}
+
+h1 {
+	font-family: 'Courgette', sans-serif;
+	font-size: 300%;
+	border-bottom: 1px dashed #000;
+}
+
+h2 {
+	font-family: 'Rokkitt', sans-serif;
+	font-size: 200%;
+	background-color: #461D7F;
+	padding: 10px;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	color: #9A73D8;
+}
+
+.container {
+	margin-bottom: 100px;
+}
+
+em {
+	color: #FFF7AB;
+	font-size: 125%;
+	text-transform: uppercase;
+}
+
+.small {
+	width: 40%;
+}
+
+@media (max-width: 768px) {
+	.video {
+		width: 80%;
+	}
+}
+
+@media (max-width: 320px) {
+	img, .video, .small {
+		display: none;
+	}
+}
+
+:focus {
+	background-color: #FFF700;
+}
+
+.name {
+	font-size: 120%;
+	line-height: 1em;
+}
+
+.description {
+	color: #DCDCDC;
+	font-style: italic;
+}
+
+.price, .prices {
+	color: #DCDCDC;
+	font-style: italic;
+}
+
+.photos {
+	margin: 0 auto;
+	text-align: center;
+}
